@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--mode switch-->
+  <div id="theme-toggle">
+    <i class="fa-solid fa-moon"></i>
+  </div>
+  
+  
+  <nav class="nav-main">
+   <div class="left-side-nav">
+    <div class="logo-container">
+      <p class="logo">
+        MS
+      </p>
+    </div>
+    <div class="menu">
+      <ul class="menu-list">
+        <li><a href="#about"class="menu-bars">About</a></li>
+        <li> <a href="#skills"class="menu-bars">Skills</a></li>
+        <li> <a href="#projects" class="menu-bars">Projects</a></li>
+        <li><a href="#socials"class="menu-bars">Socials</a></li>
+      </ul>
+    </div>
+    
+    <!--Inside the sidebar for mobile devices-->
+    <div class="menu-sidebar">
+      <ul class="menu-list-sidebar">
+        <li><a href="#about"class="menu-bars">About</a></li>
+        <li><a href="#skills"class="menu-bars">Skills</a></li>
+        <li><a href="#projects" class="menu-bars">Projects</a></li>
+        <li><a href="#socials"class="menu-bars">Socials</a></li>
+      </ul>
+      <div class="chat-email-container">
+        <a href="#" onclick="chatNow()" class="menu-bars">
+          <i class="fa-brands fa-facebook-messenger"></i>
+          Chat Now
+        </a>
+      <a href="#" onclick="mailNow()" class="menu-bars">
+        <i class="fa-solid fa-envelope"></i>
+        Email Now
+      </a>
+      </div>
+    </div>
+   </div>
+   <!--Chat Now Icons-->
+   <div class="right-side-nav">
+     <i class="fa-brands fa-facebook-messenger" onclick="chatNow()"></i>
+     <i class="fa-solid fa-envelope" onclick="mailNow()"></i>
+   </div>
+   <!--open Sidebar-->
+   <svg class="sidebar" onclick="toggleMenu()"
+          width="40"
+          height="40"
+          viewBox="0 0 100 100">
+          <path class="bar top"
+           d="M 20 25 L 80 25
+            "
+            />
+          <path class="bar middle"
+           d="M 20 50 L 80 50
+            "
+            />
+           <path class="bar bottom"
+           d="M 20 75 L 80 75
+            "
+          />
+        </svg>
+       <svg class="sidebar-x" onclick="toggleMenu()"
+          width="40"
+          height="40"
+          viewBox="0 0 100 100">
+         <path class="bar"
+          d="M 20 25 L 80 75"
+         />
+         <path class="bar"
+          d="M 20 75 L 80 25"
+         />
+       </svg>
+
+  </nav>
+  
+  <section id="hero" class="hero-section">
+     <div class="hero-bg"></div>
+     <div class="hero-container">
+      <div class="info-container">
+        <h2>Hi, my name is</h2>
+        <h1>Maynard Gavino</h1>
+        <p>
+          As an aspiring IT professional, I focus on building efficient and digital solutions through programming and proactive problem-solving. Driven by adaptability and a commitment to continuous learning, I aim to develop accessible technology that enhances the user experience. I am eager to contribute innovative ideas and technical dedication to forward- thinking teams.
+        </p>
+        <button  onclick="location.href='#projects'">
+          View Works
+        </button>
+      </div>
+      <div class="photo-container">
+        <img src="assets/profile-picture.png" alt="Profile Picture">
+      </div>
+     </div>
+  </section>
+  
+  <section id="about" class="about">
+   <div class="section-title">
+    <h1 class="title">
+      About Me 
+    </h1>
+   </div>
+   <div class="hero-bg about-hero"></div>
+   <div class="about-content">
+     <div class="img-container">
+       <img src="assets/profile-picture2.jpg" alt="My Profile" class="profile">
+     </div>
+     <div class="about-container">
+       <h2 class="motto">
+        "Creating Simple Solution for Complex Problems"
+      </h2>
+       <div class="background-info">
+        <div class="background educ-container">
+         <h3 class="education">
+           Education
+         </h3>
+         <ul>
+           <li><i class="fa-brands fa-leanpub"></i>Graduated High School at Basud National High School</li>
+           <li><i class="fa-brands fa-leanpub"></i>Graduated Senior High School at The Ripple of Hope Skills and Technology Institue Inc.
+           </li>
+           <li><i class="fa-brands fa-leanpub"></i>
+             BSBA Major in HRM undergraduate at Camarines Norte State College
+           </li>
+         </ul>
+        </div>
+        <div class="background exp-container">
+         <h3 class="experience">
+           Experience
+         </h3>
+         <ul>
+           <li><i class="fa-solid fa-bolt"></i>Food Catering</li>
+           <li><i class="fa-solid fa-bolt"></i>Printed Services</li>
+           <li><i class="fa-solid fa-bolt"></i>Student Assistant</li>
+         </ul>
+        </div>
+      </div>
+     </div>
+   </div>
+  </section>
+  
+  <section id="skills" class="skills">
+   <div class="section-title">
+    <h1 class="title">
+      My Skills
+   </div>
+   <div class="hero-bg skills-hero"></div>
+   <div class="skills-strenght-container">
+     <div class="skills-container">
+       <h3 class="skills">Technical Skills</h3>
+       <ul>
+         <li class="skills-list"><i class="fa-solid fa-microchip"></i>Basic Programming (Python,
+Java, C++)</li>
+         <li class="skills-list"><i class="fa-solid fa-microchip"></i>Web Development (HTML, CSS,
+JavaScript)</li>
+         <li class="skills-list"><i class="fa-solid fa-microchip"></i>Database Management (MySQL)</li>
+         <li class="skills-list"><i class="fa-solid fa-microchip"></i>Computer Troubleshooting</li>
+         <li class="skills-list"><i class="fa-solid fa-microchip"></i>Graphic Design</li>
+       </ul>
+     </div>
+     <div class="skills-container">
+       <h3 class="tools">Tools & Platform</h3>
+       <ul>
+         <li class="strenghts-list"><i class="fa-solid fa-toolbox"></i>Canva</li>
+         <li class="strenghts-list"><i class="fa-solid fa-toolbox"></i>VS Code</li>
+         <li class="strenghts-list"><i class="fa-solid fa-toolbox"></i>MS Office</li>
+         <li class="strenghts-list"><i class="fa-solid fa-toolbox"></i>Wix</li>
+         <li class="strenghts-list"><i class="fa-solid fa-toolbox"></i>Github</li>
+       </ul>
+     </div>
+     <div class="skills-container">
+       <h3 class="strenghts">Skills</h3>
+       <ul>
+         <li class="strenghts-list"><i class="fa-solid fa-hand-fist"></i>Problem-solving</li>
+         <li class="strenghts-list"><i class="fa-solid fa-hand-fist"></i>Time Management</li>
+         <li class="strenghts-list"><i class="fa-solid fa-hand-fist"></i>Teamwork</li>
+         <li class="strenghts-list"><i class="fa-solid fa-hand-fist"></i>Communication</li>
+         <li class="strenghts-list"><i class="fa-solid fa-hand-fist"></i>Adaptability</li>
+       </ul>
+     </div>
+   </div>
+  </section>
+  
+  <section id="projects" class="projects">
+   <div class="section-title">
+     <h1 class="title">
+       My Projects
+   </div>
+   <div class="hero-bg category-hero"></div>
+    <div class="category-main">
+      <div class="category-core">
+        <h3 class="category">Graphic Design</h3>
+        <div class="category-container">
+        <img onclick="openGallery()" src="assets/category1.jpg" alt="Graphic Design" class="category-img">
+        </div>
+      </div>
+      <div class="category-core">
+        <h3 class="category">Tools Tutorial</h3>
+        <div class="category-container">
+        <img src="assets/category2.png" alt="Image 2" class="category-img open-warning" data-msg="Tools not ready yet">
+       </div>
+      </div>
+      <div class="category-core">
+        <h3 class="category">Web Design</h3>
+       <div class="category-container">
+        <img src="assets/category3.png" alt="Image 3" class="category-img open-warning" data-msg="Web design coming soon">
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  
+  <section id="socials" class="socials">
+   <div class="section-title">
+     <h1 class="title">
+       My Socials
+   </div>
+   <div class="hero-bg"></div>
+   <div class="socials-container">
+     <div class="socials-core">
+       <i class="fa-brands fa-facebook socials-icon"></i>
+       <a href="https://www.facebook.com/Maynard142006" class="socials-name">Maynard Gavino</a>
+     </div>
+     <div class="socials-core">
+       <i class="fa-brands fa-tiktok  socials-icon"></i>
+       <a href="https://www.tiktok.com/@mynrddddd1?lang=en&is_from_webapp=1&sender_device=mobile&sender_web_id=7631433696042092040" class="socials-name">@mynrddddd1</a>
+     </div>
+     <div class="socials-core">
+       <i class="fa-brands fa-instagram socials-icon"></i>
+       <a href="https://www.instagram.com/maynarddddd_?igsh=MWdlbnM5YXZydHk4OA==" class="socials-name">maynarddddd_</a>
+     </div>
+     <div class="socials-core">
+       <i class="fa-brands fa-github socials-icon"></i>
+       <a href="https://www.instagram.com/maynarddddd_?igsh=MWdlbnM5YXZydHk4OA==" class="socials-name">maynarddddd_</a>
+     </div>
+   </div>
+  </section>
+  
+    <!-- This is the modal-->
+   <div id="gallery-modal" class="modal">
+   <div class="modal-content gallery">
+     
+     <span class="close-btn" onclick="closeGallery()">&times;</span>
+     
+     <h2>Graphic Design Gallery</h2>
+     
+     <div class="gallery-grid">
+      <div class="design-plate">
+       <img src="assets/design1.jpg" alt="Design 1" onclick="openImage(this.src)">
+       </div>
+      <div class="design-plate">
+        <img src="assets/design2.jpg" alt="Design 1" onclick="openImage(this.src)">
+      </div>
+      <div class="design-plate">
+        <img src="assets/design3.jpg" alt="Not Available" onclick="openImage(this.src)">
+      </div>
+      <div class="design-plate">
+        <img src="assets/design4.jpg" alt="Not Available" onclick="openImage(this.src)">
+      </div>
+     </div>
+   </div>
+ </div>
+ 
+ <!-- Fullsize modal image -->
+ <div id="image-viewer" class="image-viewer">
+  <span class="close-viewer" onclick="closeImage()">&times;</span>
+  <div class="viewer-content">
+  <img id="full-image" src="">
+  </div>
+</div>
+
+ 
+  <div id="warning-modal" class="modal modal-warning">
+   <div class="warning-content">
+    <h3>
+      Sorry
+    </h3>
+    <p>
+      This isn't available yet.
+    </p>
+    <button id="go-back-btn"class="warning-btn">
+      Go Back
+    </button>
+    </div>
+  </div>
+  
+  <footer>
+    <nav>
+      <div class="menu footer-menu">
+        <ul class="menu-links footer-menu-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#socials">Socials</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>
+      Copyright &#169; 2026 Maynard Gavino. All Rights Reserved.
+    </p>
+  </footer>
+  
+  
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
